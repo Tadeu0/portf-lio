@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red;  */
+    scroll-behavior: smooth;
+}
+
+.cabeçario{
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 10vh;
+    padding-left: 10% ;
+    padding-right: 10% ;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+.header_titulo{
+    color: white;
+    padding-right: 30% ;
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 24px;
+    
+}
+.header_titulo a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navegation{
+    text-decoration: none;
+    /* border: 1px solid rgb(255, 0, 0); */
+    min-width: 30%;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navegation a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.724);
+    
+}
+
+.navegation a:hover{
+    transform: translateY(-3px);
+    transition: 0.4s;
+    color: white;
+}
+.est-but{
+    margin-left: 50px;
+    width: 15%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login{
+    background-color: rgba(255, 255, 255, 0.212);
+    color: white;
+    width: 100px;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login:hover{
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(255, 255, 255);
+ color: black;
+}
+.registrar{
+    background-color: rgba(255, 255, 255, 0.212);
+    color: white;
+    width: 100px;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.registrar:hover{
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(255, 255, 255);
+ color: black;
+}
+#inicio{
+    background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.145)),
+     url(imagem/9129518.jpg)
+    ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.titulo{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+}
+.paragrafo_estrutura{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.titulo-estr{
+    height: 40vh;
+    width: 35%;
+    margin-top: 10%;
+}
+.sub_titulo{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fotografia{
+    min-width: 100%;
+    height: 50vh;
+    margin-right: -5%;
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: foto  linear  infinite;
+    box-shadow: 0px 0px 20px 3px white;
+}
+.estrutura_fotografia{
+    min-width: 25%;
+    height: 50vh;
+    margin-right: -5%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: est_foto 10s linear infinite;
+}
+
+@keyframes foto {
+    0%{ box-shadow: 0px 0px 20px 3px white;}
+    25%{ box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.312);}
+    75%{box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.312);}
+}
+
+@keyframes est_foto {
+    0%,100%{ transform: translateY(0px); }
+    25%{ transform: translateY(-10px);}
+    50%{ transform: translateY(0px);}
+    75%{transform: translateY(10px);}
+
+}
+
+#sobre_mim{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    width: 40%;
+    height: 96vh;
+    margin-left: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient( rgb(0, 0, 0),rgba(0, 0, 0, 0.786) 50%, rgba(255, 255, 255, 0.156) 100%), 
+    url(imagem/imagem_programando.jpeg);
+    animation: imagem_s  linear ;
+    animation-timeline: view(100% 5%);
+}
+
+.titulo_sobre{
+    color: white;
+    margin-left: 14%;
+    margin-top: -50px;
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: titulo_s  5s linear;
+    animation-timeline: view(30% 1%);
+    background: #ffffff;
+    background: linear-gradient(90deg, rgb(64, 0, 255) 0%, rgb(104, 104, 104) 27%, rgb(24, 24, 161) 58%, rgb(124, 216, 235) 100%);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.paragrafo_sobre{
+    color: white;
+    margin-left: 14%;
+    font-size: 24px;
+    /* border: 1px solid white; */
+    width: 90%;
+    font-weight: bold;
+    animation: paragrafo_s   linear;
+    animation-timeline: view(95% 10%);
+}
+
+.estrutura_text_sobre{
+    width: 50%;
+    margin-left: 25px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+@keyframes titulo_s {
+    0%{ transform: translateY(200px); opacity: 0; filter: blur(50px);}
+    100%{ transform: translateY(0px); opacity: 1;}
+}
+@keyframes paragrafo_s {
+    0%{ transform: translateX(900px); opacity: 0; filter: blur(50px);}
+    100%{ transform: translateX(0px); opacity: 1; filter: blur(0);}
+}
+@keyframes imagem_s {
+    0%{ transform: scale(0); opacity: 0; filter: blur(50px);}
+    100%{ transform: scale(1); opacity: 1; filter: blur(0);}
+}
+
+
+#projetos{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.881);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0.5px solid white;
+    padding: 5px;
+}
+
+.titulo_projeto{
+   color: white;
+   margin-top: 5%;
+   margin-left: 20px;
+}
+
+.container_projetos{
+   border: 1px solid blue;
+   min-width: 90%;
+   height: 90vh;
+   margin-top: 80px;
+   background-color: rgba(255, 255, 255, 0.478);
+}
