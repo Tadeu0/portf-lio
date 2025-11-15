@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..700&display=swap');
 
+
+:root{
+    --cor_card_AgroSystem : #ffffff ;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -236,7 +240,7 @@
 
 #projetos{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: rgba(0, 0, 0, 0.881);
     display: flex;
     align-items: center;
@@ -246,15 +250,84 @@
 }
 
 .titulo_projeto{
-   color: white;
    margin-top: 5%;
    margin-left: 20px;
-}
+   font-size: 60px;
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background: linear-gradient(to right, rgb(0, 195, 255) ,rgb(26, 9, 219));
+   background-clip: text;
+   color: transparent;
+   -webkit-background-clip: text;
+}   
 
 .container_projetos{
-   border: 1px solid blue;
    min-width: 90%;
    height: 90vh;
-   margin-top: 80px;
-   background-color: rgba(255, 255, 255, 0.478);
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   gap: 10;
+   
+}
+
+.card_AgroSystem{
+    background-color: var(--cor_card_AgroSystem);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: cards  linear ;
+    animation-timeline: view( 60% 5%);
+}
+.card_AgroSystem img{
+    width: 100%;
+    height: 25vh;
+    border-radius:10px 10px  0px 0px;
+}
+
+.information_sts{
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+    border-radius:0px 0px  10px 10px;
+}
+
+.card_fitflow{
+    background-color: var(--cor_card_AgroSystem);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: cards  linear ;
+    animation-timeline: view( 60% 5%);
+}
+.card_fitflow img{
+    width: 100%;
+    height: 30vh;
+    border-radius:10px 10px 0px 0px;
+    background-color: white;
+}
+
+.information_fit{
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+    border-radius:0px 0px  10px 10px;
+}
+
+
+
+
+
+
+
+
+@keyframes cards {
+    0%{transform: translateY(100px); opacity: 0; filter: blur(1);}
+    100%{transform: translateY(0); opacity: 1; filter: blur(0);}
+    
 }
