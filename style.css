@@ -373,8 +373,10 @@
     padding-right: 30px;
     padding-left: 30px; 
     cursor: pointer;
+    filter: brightness(10%);
 }
 .instagram:hover,.github:hover, .linkedin:hover{
     transform: translateY(-10px);
     transition: 0.5s;
+    filter: brightness(100%);
 }
